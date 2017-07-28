@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#009681</color>
+    <color name="colorPrimary">#0cb78c</color>
+    <color name="colorAccent">#00BCD4</color>
+    <color name="colorWhite">#fcfbfb</color>
+
+    <color name="colorBlue">#8ca7a3</color>
+    <color name="textColor">#ffffff</color>
+    <color name="selected_color">#403F51B5</color>
+
+    <color name="green">#3eb663</color>
+    <color name="black">#212121</color>
+    <color name="dark_grey">#333</color>
+    <color name="orange">#ff9933</color>
+
+    <color name="new_task_bg">#e7fce4</color>
+
+
+    <!--Registration-->
+    <color name="bg_register">#f7f7f7</color>
+    <color name="bg_main">#428bca</color>
+    <color name="white">#ffffff</color>
+    <color name="bg_login">#e3ffe2</color>
+    <color name="input_login">#198852</color>
+    <color name="input_login_hint">#999999</color>
+    <color name="input_register">#888888</color>
+    <color name="input_register_bg">#eaf6fb</color>
+    <color name="input_register_hint">#5e6266</color>
+    <color name="btn_login">#26ae90</color>
+    <color name="btn_login_bg">#eceef1</color>
+    <color name="lbl_name">#333333</color>
+    <color name="grey">#666</color>
+    <color name="divider_lite">#e2e2e2</color>
+</resources>

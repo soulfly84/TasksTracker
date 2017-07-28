@@ -1,0 +1,153 @@
+<resources>
+    <string name="app_name">Задания</string>
+    <string name="maps_name">Карта</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="content_authority" translatable="false">ru.soulfly.tasksTracker</string>
+    <string name="sync_account_type" translatable="false">tasksTracker.soulfly.ru</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_tasks">Задания</string>
+    <string name="menu_settings">Настройки</string>
+    <string name="menu_quit">Выход</string>
+
+    <string name="nav_header_mail">vodovozzz@inbox.ru</string>
+    <string name="nav_header_user_name">Timur Vodovozov</string>
+
+    <string name="expenses_fragment">Hello Fragments</string>
+
+    <string name="add_expenses_activity">Hello!</string>
+
+    <string name="expenses_button_cancel">Отмена</string>
+    <string name="expenses_button_add">Добавить</string>
+
+    <string name="phone_hint">Телефон</string>
+    <string name="adress_hint">Адрес</string>
+    <string name="task_desc_hint">Описание задания</string>
+    <string name="expenses_editText_prise">Введите стоимость</string>
+    <string name="expenses_editText_date">Введите дату</string>
+    <string name="toast_added">Задача добавлена</string>
+    <string name="toast_updated">Задача успешно была изменена</string>
+    <string name="toast_created">Задача успешно добавлена</string>
+    <string name="toast_update_error">Ошибка при сохранении!</string>
+    <string name="toast_install_maps">Установите приложение Google Maps</string>
+    <string name="expenses_toast_error">Сначала введите категорию</string>
+    <string name="expenses_select_categories">Выберите категорию</string>
+    <string name="expenses_warning">Заполните все поля</string>
+
+    <string name="category_snackbar_massage">Это snackbar</string>
+
+    <string name="search_title">Поиск</string>
+    <string name="statuses_hint">Статус</string>
+
+
+
+    <string-array name="statuses_array">
+        <item>Новое</item>
+        <item>Делаю</item>
+        <item>Сделано</item>
+    </string-array>
+
+
+
+    <!--Registration-->
+    <string name="registration_title">Регистрация</string>
+    <string name="registration_btn_registration">Регистрация</string>
+    <string name="registration_btn_canсel">Отмена</string>
+    <string name="registration_text_enter_login">Введите логин</string>
+    <string name="registration_text_enter_password">Введите пароль</string>
+    <string name="registration_login_empty">Логин не заполнен</string>
+    <string name="registration_password_empty">Пароль не заполнен</string>
+    <string name="registration_text_error">Поле не может содержать менее 2 символов</string>
+    <string name="valid_email_error">Введите email в формате example@email.com</string>
+    <string name="internet_error">Проверьте интернет-соединение!</string>
+    <string name="internet_sync_error">Данные не синхронизированы с сервером!</string>
+    <string name="registration_server_status_busy_login_error">Login занят, введите другой login</string>
+    <string name="registration_server_other_error">Ошибка сервера, попробуйте еще раз</string>
+
+    <string name="auth_title">Аутентификация</string>
+    <string name="auth_btn_registration_ok">OK</string>
+    <string name="auth_btn_new_registration">Регистрация нового пользователя</string>
+    <string name="server_status_wrong_login_error">Не правильно введен login</string>
+    <string name="server_status_wrong_creds">Логин или пароль введены неверно</string>
+    <string name="auth_server_status_error">Произошла ошибка сервера</string>
+    <string name="auth_server_google_error">Вы не вошли с помощью Google+</string>
+
+    <string name="contextual_action_bar_delete">Удалить</string>
+    <string name="dialog_window_btn_ok">Ok</string>
+    <string name="dialog_window_btn_cancel">Отмена</string>
+    <string name="add_new_category">Введите название категории</string>
+
+    <string name="statistic_text">Статистика по категориям</string>
+
+    <string name="menu_title_text">Нажмите для оповещения</string>
+
+    <!-- common -->
+    <string name="pref_enable_notifications_default" translatable="false">true</string>
+    <string name="pref_enable_notifications_true">Включено</string>
+    <string name="pref_enable_notifications_false">Выключено</string>
+
+    <!-- Global notifications -->
+    <string name="pref_enable_notifications_key" translatable="false">enable_notifications</string>
+    <string name="pref_enable_notifications_label">Обновление оповещения</string>
+
+    <!-- Vibrate option -->
+    <string name="pref_enable_vibrate_notifications_key" translatable="false">enable_vibrate_notifications</string>
+    <string name="pref_enable_vibrate_notifications_label">Вибрация</string>
+
+    <string name="pref_notification_section">Настройки оповещения</string>
+
+    <!-- Sound option -->
+    <string name="pref_enable_sound_notifications_key" translatable="false">enable_sound_notifications</string>
+    <string name="pref_enable_sound_notifications_label">Звук</string>
+
+    <!-- LED option -->
+    <string name="pref_enable_led_notifications_key" translatable="false">enable_led_notifications</string>
+    <string name="pref_enable_led_notifications_label">Световой индикатор</string>
+
+    <!-- Foreground option -->
+    <string name="pref_enable_foreground_notifications_key" translatable="false">enable_foreground_notifications</string>
+    <string name="pref_enable_foreground_notifications_label">Сообщение оповещения на переднем плане</string>
+
+    <!-- String for notification bar-->
+    <string name="notification_message">Это оповещающее сообщение!</string>
+
+
+    <!--Register Login-->
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Пароль</string>
+    <string name="hint_name">Имя</string>
+    <string name="btn_login">ВОЙТИ</string>
+    <string name="btn_register">ЗАРЕГИСТРИРОВАТЬСЯ</string>
+    <string name="btn_link_to_register">Зарегистрироваться</string>
+    <string name="btn_link_to_login">Уже зарегистрирован! Войти.</string>
+    <string name="welcome">Добро пожаловать</string>
+    <string name="btn_logout">Выйти</string>
+    <string name="name">Имя</string>
+    <string name="save">Сохранить</string>
+    <string name="urgent_task">Срочно</string>
+    <string name="splash_title">Подождите...</string>
+    <string name="login_email">testcompany@gmail.com</string>
+    <string name="login_password">qwerty</string>
+    <string name="error_no_internet">Отсутствует интернет соединение</string>
+    <string name="update_list">Обновить</string>
+    <string name="refresh_finished">Обновлено успешно!</string>
+    <string name="unknown_server_error">Ошибка сервера! Попробуйте еще раз</string>
+    <string name="done">Сделано</string>
+    <string name="new_task">new</string>
+    <string name="task_edit_do">Сделать до:</string>
+    <string name="where_to_go">Куда ехать</string>
+    <string name="all_tasks_menu">Все задания</string>
+    <string name="new_task_title">Новая задача</string>
+
+
+    <string-array name="spinner_list_item_array">
+        <item>все</item>
+        <item>новые</item>
+        <item>делаю</item>
+        <item>сделано</item>
+    </string-array>
+</resources>

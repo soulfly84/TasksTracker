@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <EditText
+            android:id="@+id/descriptionET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/task_desc_hint"
+            android:minLines="3"
+            android:scrollbars="vertical" />
+
+        <LinearLayout
+            android:id="@+id/topLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <EditText
+                android:id="@+id/adressTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:hint="@string/adress_hint"
+                android:maxLines="3"
+                android:minLines="1"
+                android:scrollbars="vertical" />
+
+
+        </LinearLayout>
+        <EditText
+            android:id="@+id/telTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:hint="@string/phone_hint"
+            android:scrollbars="vertical" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@string/font_family_regular"
+                android:onClick="showDatePickerDialog"
+                android:text="Сделать:"
+                android:textSize="@dimen/text_size_normal" />
+
+            <Button
+                android:id="@+id/datePickerBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Дата"
+                android:textSize="@dimen/text_size_normal"
+                android:fontFamily="@string/font_family_regular"/>
+            <Button
+                android:id="@+id/timePickerBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Время"
+                android:textSize="@dimen/text_size_normal"
+                android:fontFamily="@string/font_family_regular"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@string/font_family_regular"
+                android:text="Статус:"
+                android:textSize="@dimen/text_size_normal" />
+
+            <Spinner
+                android:id="@+id/statusSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/statuses_array"
+                android:fontFamily="@string/font_family_regular"
+                android:prompt="@string/statuses_hint"
+                android:textSize="@dimen/text_size_normal" />
+
+
+            <CheckBox
+                android:id="@+id/urgentCh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@string/font_family_regular"
+                android:onClick="showDatePickerDialog"
+                android:text="@string/urgent_task"
+                android:textSize="@dimen/text_size_normal" />
+
+
+        </LinearLayout>
+
+        <!-- <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/datePicker"
+             android:layout_marginTop="170dp"
+             android:orientation="horizontal">
+
+             <Button
+                 android:id="@+id/expenses_btn_cancel"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1"
+                 android:text="@string/expenses_button_cancel" />
+
+             <Button
+                 android:id="@+id/add_task_btn"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1"
+                 android:text="@string/expenses_button_add" />
+         </LinearLayout>-->
+
+    </LinearLayout>
+
+   <LinearLayout
+        android:id="@+id/splashLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+       android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/progressTr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/splash_title"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/text_size_normal" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
