@@ -61,14 +61,9 @@ public class MainActivity extends AppCompatActivity implements FragmentManager.O
     void setupViews() {
         setSupportActionBar(toolbar);
         actionBar = getSupportActionBar();
-
-
-        //setDrawerLayout();
         fragmentManager = getSupportFragmentManager();
         fragmentManager.addOnBackStackChangedListener(this);
-
-       // TrackerSyncAdapter.initializeSyncAdapter(this);
-
+        TrackerSyncAdapter.initializeSyncAdapter(this);
     }
 
     @Override
