@@ -18,7 +18,7 @@ import android.widget.Toast;
 import com.metalspb.taskstracker.R;
 import com.metalspb.taskstracker.backgroundTasks.CheckStatusBackground;
 import com.metalspb.taskstracker.backgroundTasks.rest.NetworkStatusChecker;
-import com.metalspb.taskstracker.models.storege.TasksEntity;
+import com.metalspb.taskstracker.storege.TasksEntity;
 import com.metalspb.taskstracker.utils.Constants;
 import com.metalspb.taskstracker.utils.GlobalNotifications;
 
@@ -192,22 +192,7 @@ public class EditTaskActivity extends AppCompatActivity implements AdapterView.O
             GlobalNotifications.showNoInternetAccessError(this);
         }
     }
-   /* @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        if (item.getItemId() == android.R.id.home) {
 
-            return true;
-        }
-        switch (item.getItemId()) {
-            case R.id.item_save:
-
-
-                break;
-
-        }
-        return (super.onOptionsItemSelected(item));
-    }
-*/
 
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {

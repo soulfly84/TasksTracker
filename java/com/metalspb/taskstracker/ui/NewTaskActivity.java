@@ -24,7 +24,7 @@ import android.widget.Toast;
 import com.metalspb.taskstracker.R;
 import com.metalspb.taskstracker.backgroundTasks.CheckStatusBackground;
 import com.metalspb.taskstracker.backgroundTasks.rest.NetworkStatusChecker;
-import com.metalspb.taskstracker.models.storege.TasksEntity;
+import com.metalspb.taskstracker.storege.TasksEntity;
 import com.metalspb.taskstracker.ui.fragments.DatePickerFragment;
 import com.metalspb.taskstracker.ui.fragments.TimePickerFragment;
 import com.metalspb.taskstracker.utils.Constants;

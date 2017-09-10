@@ -7,8 +7,8 @@ import com.activeandroid.ActiveAndroid;
 import com.metalspb.taskstracker.backgroundTasks.rest.RestService;
 import com.metalspb.taskstracker.models.TaskModel;
 import com.metalspb.taskstracker.models.TasksListModel;
-import com.metalspb.taskstracker.models.storege.TasksEntity;
-import com.metalspb.taskstracker.ui.App;
+import com.metalspb.taskstracker.storege.TasksEntity;
+import com.metalspb.taskstracker.ui.AppController;
 import com.metalspb.taskstracker.utils.Constants;
 
 import org.androidannotations.annotations.Background;
@@ -45,13 +45,13 @@ public class CheckStatusBackground {
 
 
 
-    private String token = App.getAuthToken();
+    private String token = AppController.getAuthToken();
     private TaskModel mTaskModel = null;
 
     public void getTasksFromServer() {
         status = Constants.UPDATE_STARTED;
 
-        String token = App.getAuthToken();
+        String token = AppController.getAuthToken();
         Log.d(TAG, "CheckStatusBackground. getTasksFromServer()--- token " + token);
         try {
             TasksListModel tasksListModel = restService.getAllTasks(token);
@@ -104,7 +104,7 @@ public class CheckStatusBackground {
     //@Background
     public void updateTaskAtServer(int taskId, int taskStatus, String updatedDate) {
         try {
-            mTaskModel = restService.updateTask(App.getAuthToken(), taskId, taskStatus, updatedDate);
+            mTaskModel = restService.updateTask(AppController.getAuthToken(), taskId, taskStatus, updatedDate);
             Log.d(TAG, "updateTaskAtServer--. mTaskModel = " + mTaskModel);
         } catch (IOException e) {
             e.printStackTrace();
@@ -113,7 +113,7 @@ public class CheckStatusBackground {
 
     public void createTaskAtServer(String task, String adress, String phoneNumber, int urgent, int status, String finishDate, String updatedDate) {
         try {
-            mTaskModel = restService.postNewTask(App.getAuthToken(), task, adress, phoneNumber, urgent, status, finishDate, updatedDate);
+            mTaskModel = restService.postNewTask(AppController.getAuthToken(), task, adress, phoneNumber, urgent, status, finishDate, updatedDate);
             Log.d(TAG, "updateTaskAtServer--. mTaskModel = " + mTaskModel);
         } catch (IOException e) {
             e.printStackTrace();

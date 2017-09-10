@@ -120,7 +120,7 @@ public class RegistrationActivity extends AppCompatActivity {
 
     @UiThread
     void navigateToMainScreen() {
-        startActivity(new Intent(this, MainActivity_.class));
+        startActivity(new Intent(this, TasksActivity_.class));
     }
 
     @UiThread

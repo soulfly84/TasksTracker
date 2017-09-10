@@ -1,4 +1,4 @@
-package com.metalspb.taskstracker.models.storege;
+package com.metalspb.taskstracker.storege;
 
 import com.activeandroid.ActiveAndroid;
 import com.activeandroid.Cache;

@@ -145,9 +145,9 @@
 
 
     <string-array name="spinner_list_item_array">
-        <item>все</item>
-        <item>новые</item>
-        <item>делаю</item>
-        <item>сделано</item>
+        <item>Все задачи</item>
+        <item>Новые задачи</item>
+        <item>Делаю</item>
+        <item>Сделано</item>
     </string-array>
 </resources>

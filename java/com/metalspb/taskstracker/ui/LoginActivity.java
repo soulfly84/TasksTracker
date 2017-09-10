@@ -37,20 +37,11 @@ public class LoginActivity extends AppCompatActivity {
 
     @ViewById(R.id.loginLayout)
     LinearLayout loginLayout;
-    @ViewById(R.id.emailET)
-    EditText emailET;
-    @ViewById(R.id.passwordET)
-    EditText passwordET;
-
-
-    @ViewById(R.id.linkToRegisterScreenBtn)
-    Button linkToRegisterScreenBtn;
-
-    @ViewById(R.id.progressTr)
-    ProgressBar progressTr;
-
-    @ViewById(R.id.loginBtn)
-    Button loginBtn;
+    @ViewById(R.id.emailET) EditText emailET;
+    @ViewById(R.id.passwordET) EditText passwordET;
+    @ViewById(R.id.linkToRegisterScreenBtn) Button linkToRegisterScreenBtn;
+    @ViewById(R.id.progressTr) ProgressBar progressTr;
+    @ViewById(R.id.loginBtn) Button loginBtn;
 
     @Click(R.id.loginBtn)
     void loginUser() {
@@ -90,7 +81,7 @@ public class LoginActivity extends AppCompatActivity {
             UserLoginModel userLoginModel = RestService.getInstance().login(email, password);
             String statusMsg = userLoginModel.getStatus();
             if (statusMsg.equals(Constants.SUCCESSFULLY_LOGINNED)) {
-                App.saveAuthToken(userLoginModel.getApiKey());
+                AppController.saveAuthToken(userLoginModel.getApiKey());
                 Log.d(LOG_TAG, "Срхраняю token= " + userLoginModel.getApiKey());
                 navigateToMainScreen();
             } else {
@@ -123,7 +114,7 @@ public class LoginActivity extends AppCompatActivity {
 
     @UiThread
     void navigateToMainScreen() {
-        startActivity(new Intent(this, MainActivity_.class));
+        startActivity(new Intent(this, TasksActivity_.class));
     }
 
     @UiThread

@@ -13,7 +13,7 @@ import android.widget.TextView;
 
 import com.metalspb.taskstracker.R;
 import com.metalspb.taskstracker.backgroundTasks.CheckStatusBackground;
-import com.metalspb.taskstracker.models.storege.TasksEntity;
+import com.metalspb.taskstracker.storege.TasksEntity;
 import com.metalspb.taskstracker.views.ClickListener;
 
 import java.text.SimpleDateFormat;
@@ -156,7 +156,7 @@ public class TasksAdapter extends SelectableAdapter<TasksAdapter.ExpensesHolder>
     }
 
 
-    class ExpensesHolder extends RecyclerView.ViewHolder implements View.OnClickListener, View.OnLongClickListener {
+    class ExpensesHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
         private ClickListener clickListener;
         private LinearLayout rootLayout;
@@ -177,7 +177,6 @@ public class TasksAdapter extends SelectableAdapter<TasksAdapter.ExpensesHolder>
             selectedOverlay = itemView.findViewById(R.id.selected_overlay);
             this.clickListener = clickListener;
             itemView.setOnClickListener(this);
-            itemView.setOnLongClickListener(this);
 
 
 
@@ -198,10 +197,6 @@ public class TasksAdapter extends SelectableAdapter<TasksAdapter.ExpensesHolder>
                 clickListener.onItemClicked(getAdapterPosition());
         }
 
-        @Override
-        public boolean onLongClick(View v) {
-            return clickListener != null && clickListener.onItemLongClicked(getAdapterPosition());
-        }
     }
 }
 

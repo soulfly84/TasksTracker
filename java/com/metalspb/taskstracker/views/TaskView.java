@@ -1,7 +1,7 @@
 package com.metalspb.taskstracker.views;
 
 import com.arellomobile.mvp.MvpView;
-import com.metalspb.taskstracker.models.storege.TasksEntity;
+import com.metalspb.taskstracker.storege.TasksEntity;
 
 import java.util.List;
 

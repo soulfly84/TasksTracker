@@ -8,7 +8,7 @@ import com.activeandroid.ActiveAndroid;
 import com.metalspb.taskstracker.utils.Constants;
 
 
-public class App extends Application {
+public class AppController extends Application {
 
     private static SharedPreferences sharedPreferences;
 

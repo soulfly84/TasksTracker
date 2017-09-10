@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/refresh_list"
+        android:icon="@drawable/ic_refresh"
+        android:title="@string/update_list"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/menu_quit"
+        android:icon="@drawable/ic_exit"
+        android:title="@string/menu_quit"
+        android:paddingTop="106dp"
+        />
+
+
+</menu>

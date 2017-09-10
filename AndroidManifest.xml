@@ -11,15 +11,15 @@
     <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
 
 
-    <!--Maps-->
+    <!--Maps
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>-->
 
 
     <application
-        android:name="com.metalspb.taskstracker.ui.App"
+        android:name="com.metalspb.taskstracker.ui.AppController"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -67,18 +67,8 @@
         </activity>
 
         <activity
-            android:name="com.metalspb.taskstracker.ui.MainActivity_"
+            android:name="com.metalspb.taskstracker.ui.TasksActivity_"
             android:label="@string/menu_tasks"
-            android:theme="@style/AppTheme.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAINACTYVITY" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-
-        <activity
-            android:name="com.metalspb.taskstracker.ui.SettingsActivity"
-            android:label="@string/menu_settings"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAINACTYVITY" />
@@ -97,20 +87,12 @@
             android:parentActivityName="com.metalspb.taskstracker.ui.MainActivity_"
             android:theme="@style/AppTheme.NoActionBar"/>
 
-        <!-- ATTENTION: This was auto-generated to add Google Play services to your project for
-        App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
-        <meta-data
-            android:name="com.google.android.gms.version"
-            android:value="@integer/google_play_services_version"/>
 
         <provider
             android:name="com.metalspb.taskstracker.backgroundTasks.sync.StubContentProvider"
             android:authorities="@string/content_authority"
             android:exported="false"
             android:syncable="true"/>
-     <!--   <service
-            android:name=".FetchAddressIntentService"
-            android:exported="false"/>-->
 
         <service
             android:name="com.metalspb.taskstracker.backgroundTasks.sync.TrackerAuthenticatorService"
@@ -135,10 +117,6 @@
                 android:name="android.content.SyncAdapter"
                 android:resource="@xml/syncadapter"/>
         </service>
-
-        <service
-            android:name="com.metalspb.taskstracker.backgroundTasks.ServiceSample"
-            android:enabled="true"/>
 
     </application>
 
